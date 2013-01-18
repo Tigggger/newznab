@@ -1,4 +1,4 @@
-This script is designed to do the same thing as Thracky's Unix version for Windows users.
+This windows script is designed to do the same thing as Thracky's Unix version.
 
 It will safely backfill your site one day at a time
 All releases are processed before it moves on to the next day
