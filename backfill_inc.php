@@ -20,7 +20,7 @@ function get_count($db) {
 }
 
 //this is the maximum days the script will go up to. change it if you desire
-$backfill_target = 200;
+$backfill_target = 365;
 
 //see what the oldest group is
 $db = new Db;
