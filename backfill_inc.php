@@ -28,7 +28,7 @@ $sql = "SELECT backfill_target FROM groups WHERE active=1 ORDER BY backfill_targ
 $res= $db->query($sql);
 $highest = $res[0]['backfill_target'];
 
-//increase the backfill days by 1 for all active groups less that the oldest
+//increase the backfill days by 1 for all active groups less than the oldest
 //this will allow groups to catch up so retention is the same for the whole site
 $sql = "UPDATE groups SET backfill_target=backfill_target+1 WHERE active=1 AND backfill_target < '$backfill_target' AND backfill_target <= '$highest'";
 $res= $db->query($sql);
