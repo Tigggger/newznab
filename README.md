@@ -6,8 +6,14 @@ It will safely backfill your site one day at a time
 All releases are processed before it moves on to the next day
 
 Once the day is completed it will also run
-optimize_db, update_parsing, update_cleanup & removespecial
+optimize_db and update_parsing
 
+Optional
+Remove the REM commands to also run update_cleanup & removespecial if you wish
+
+
+INSTRUCTIONS
+============
 backfill_inc.php goes in
 newznab/misc/update_scripts
 
